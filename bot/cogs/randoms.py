@@ -28,9 +28,9 @@ class RandomsCog(interactions.Extension):
             await ctx.send("Amount of sides must be between 2-100.")
             return
         await ctx.send(
-            f"Rolled {amount} {sides}-sided dice: ```"
+            f"Rolled {amount} {sides}-sided dice: `"
             + "\n".join([str(random.randint(1, sides)) for _ in range(0, amount)])
-            + "```"
+            + "`"
         )
 
 
